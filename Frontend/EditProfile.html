@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="Images/Thoughtflow (2).png" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/EditProfile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <!-- Top heading -->
+     <div class="head-section">
+        <img src="Images/Thoughtflow (2).png" alt="ThoughtFlow Logo" class="logo">
+        <h1>ThoughtFlow</h1>
+    </div>
+
+    <div class="main-container">
+
+        <div class="left-menu">
+            <div class="userInfo">
+                <div class="profilePicture">
+                   
+                </div>
+                <p id="profileName"></p>   
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="YourPost.html">Your Post</a>
+            <a href="#">Notification</a>
+            <a href="People.html">People</a>
+            <a href="LogIn.html">Logout</a>
+
+        </div>
+
+        <div class="right-feed">
+            <div class="feed-header">
+                <h2>Profile</h2>
+                
+            </div>
+            <div class="profile-edit-section">
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Your Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="changePassword">Change Password</button>
+                    </div>
+                    <div class="password-fields" >
+                        <input type="password" id="oldPassword" placeholder="Old Password">
+                        <input type="password" id="newPassword" placeholder="New Password">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                   
+                </form>
+
+                 <!-- write categories -->
+                 <div class="category-container">
+                    <h2>Select your type (Only 3):</h2>
+                    <div class="categories">
+                        <label>
+                            <input type="checkbox" name="category" value="TECHNICAL"> TECHNICAL
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="TRAVEL"> TRAVEL
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="FOOD"> FOOD
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="SPORTS"> SPORTS
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="LIFESTYLE"> LIFESTYLE
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="MOVIES"> MOVIES
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="POLITICS"> POLITICS
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="NEWS"> NEWS
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="SPACE"> SPACE
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="OTHER"> OTHER
+                        </label>
+                    </div>
+
+                    <!-- profile photo upload -->
+                    <label for="imageUpload" class="file-input-label">
+                        <span class="custom-button">Upload Profile photo</span>
+                        <input type="file" name="file" accept="image/*" id="imageUpload" class="file-input">
+                    </label>
+                    <div id="selectedFileName"></div> 
+                </div>
+                
+            </div>
+
+            <!-- <div>
+                <button type="button" id="save" class="edit-button">Save Changes</button>
+                <button type="button" id="delete" class="edit-button">Delete Profile</button>
+            </div> -->
+            <div>
+                <button type="button" id="save" class="edit-button save-button">Save Changes</button>
+                <button type="button" id="delete" class="edit-button delete-button">Delete Profile</button>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+    
+    <script src="scripts/common.js"></script>
+    <script src="scripts/EditProfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThoughtFlow</title>
+    <link rel="icon" type="image/x-icon" href="Images/Thoughtflow (2).png" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top heading -->
+    <div class="head-section">
+        <img src="Images/Thoughtflow (2).png" alt="ThoughtFlow Logo" class="logo">
+        <h1>ThoughtFlow</h1>
+    </div>
+
+
+    <div class="main-container">
+
+        <div class="left-menu">
+            <div class="userInfo">
+                <div class="profilePicture">
+
+                </div>
+                <p id="profileName"></p>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="YourPost.html">Your Post</a>
+            <a href="#">Notification</a>
+            <a href="People.html">People</a>
+            <a href="LogIn.html" id="logout">Logout</a>
+
+        </div>
+
+        <div class="right-feed">
+
+            <div class="feed-header">
+                <div>
+                <button id="yourFeed">your Feed</button>
+                <button id="allPosts">All posts</button>
+                </div>
+                <div class="post-section">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search for Post...">
+                        <button id="search-button" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Example Post -->
+            <!-- <div class="post">
+                <h3>Post Title</h3>
+                <p class="post-description">This is a long description of the post. It can be quite lengthy and detailed to convey information.</p>
+                <div class="post-details">
+                    <span class="username">Username</span>
+                    <span class="post-date">September 26, 2023</span>
+                </div>
+                <div class="post-actions">
+                    <button class="like-button">Like</button>
+                    <button class="comment-button">Comment</button>
+                </div>
+            </div> -->
+
+            <div class="main"></div>
+            <!-- Add more posts here -->
+        </div>
+
+    </div>
+
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

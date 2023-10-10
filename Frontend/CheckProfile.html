@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="Images/Thoughtflow (2).png" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/Profile.css">
+    <link rel="stylesheet" href="css/CheckProfile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+     <!-- Top heading -->
+     <div class="head-section">
+        <img src="Images/Thoughtflow (2).png" alt="ThoughtFlow Logo" class="logo">
+        <h1>ThoughtFlow</h1>
+    </div>
+
+    <div class="main-container">
+
+        <div class="left-menu">
+            <div class="userInfo">
+                <div class="profilePicture">
+
+                </div>
+                <p id="profileName"></p>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="YourPost.html">Your Post</a>
+            <a href="#">Notification</a>
+            <a href="People.html">People</a>
+            <a href="LogIn.html">Logout</a>
+
+        </div>
+
+        <div class="right-feed">
+            <div class="feed-header">
+                <h2>Profile</h2>
+            </div>
+            <!-- Profile section -->
+            <div class="profile-section">
+                <!-- Left Column: User Information and Edit Profile Button -->
+                <div class="left-column">
+                    <div class="nameAndPhoto">
+                        <h2 id="name"></h2>
+                        <div class="profilePicOfUser"></div>
+                    </div>
+                    <br>
+                    <p>Username: <span id="username"></span></p>
+                    <p>Email: <span id="email"></span></p>
+                    <p id="followerCount">Followers: <span id="followerCountNum"></span></p>
+                    <p id="followingCount">Following: <span id="followingCountNum"></span></p>
+                    <div class="categoryAndButtonDiv">
+                        <div>
+                            <h3>User Categories:</h3>
+                            <div class="category"></div>
+                            <div class="category"></div>
+                            <div class="category"></div>
+                        </div>
+                        <button class="post-button-CheckProfile">User posts</button>
+                    </div>
+                    <!-- <button class="edit-profile-button">Edit Profile</button> -->
+                </div>
+
+                <!-- Right Column: Follower/Following Lists -->
+                <div class="right-column">
+                    <!-- Following List -->
+                    <div class="following-list">
+                        <h3>Following</h3>
+                        <div class="search-bar">
+                            <input type="text" id="following-search" placeholder="Search following...">
+                            <button id="search-button"><i class="fa-brands fa-searchengin"></i></button>
+                        </div>
+                        <!-- <div class="follower">
+                            <p>Following 3</p>
+                            <button class="unfollow-button">Unfollow</button>
+                        </div> -->
+                    </div>
+
+                    <!-- Follower List -->
+                    <div class="follower-list">
+                        <h3>Followers</h3>
+                        <div class="search-bar">
+                            <input type="text" id="follower-search" placeholder="Search followers...">
+                            <button id="search-button"><i class="fa-brands fa-searchengin"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/CheckProfile.js"></script>
+    <!-- <script src="scripts/Profile.js"></script> -->
+</body>
+
+</html>

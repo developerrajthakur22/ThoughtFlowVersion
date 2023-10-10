@@ -1,0 +1,268 @@
+/* CSS styles for the profile edit section */
+.profile-edit-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    transition: all 0.3s ease; /* Add transition for all properties */
+}
+
+
+form{
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+
+/* categories css */
+.category-container {
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categories label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.categories label:hover {
+    background-color: #ddd;
+}
+
+.categories input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.categories input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.categories input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+    
+#save {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#save:hover{
+    background-color: green;
+}
+
+#changePassword {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */   
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth background color transition */
+}
+
+#changePassword:hover {
+    background-color: red; /* Darker blue on hover */
+}
+
+/* Style for the password fields container */
+.password-fields {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Style for the password input fields */
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+/* Additional styling for the password input fields if needed */
+
+/* Style for the file input label */
+.file-input-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 200px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px; /* Center the button text vertically */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style for the custom button text */
+  .custom-button {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    padding: 0 10px;    
+  }
+  
+  /* Style for the file input itself (hidden) */
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+
+/* Common styles for both buttons */
+.edit-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for the Save Changes button */
+.save-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Hover styles for the Save Changes button */
+.save-button:hover {
+    background-color: #218838;
+}
+
+/* Styles for the Delete Profile button */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Hover styles for the Delete Profile button */
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Animation for the buttons */
+.edit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: left 0.3s;
+}
+
+.edit-button:hover::before {
+    left: 0;
+}
+

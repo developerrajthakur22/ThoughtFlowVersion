@@ -1,0 +1,5 @@
+package com.flow.Configuration;
+
+public interface SecurityConstants {
+
+}
