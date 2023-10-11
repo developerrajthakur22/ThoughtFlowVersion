@@ -1,8 +1,0 @@
-package com.flow.Configuration;
-
-public interface SecurityConstants {
-
-	public static final String JWT_KEY = "secretthoughtflow";
-	public static final String JWT_HEADER = "Authorization";
-	
-}
