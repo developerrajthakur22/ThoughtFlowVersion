@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ThoughtFlow</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="Images/Thoughtflow (2).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top heading -->
+    <div class="head-section">
+        <img src="Images/Thoughtflow (2).png" alt="ThoughtFlow Logo" class="logo">
+        <h1>ThoughtFlow</h1>
+    </div>
+    
+    <div class="container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form class="login-form" action="login.php" method="POST">
+                <div class="input-container">
+                    <label for="email">username</label>
+                    <input  id="username" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </div>
+    <script src="./scripts/logIn.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
