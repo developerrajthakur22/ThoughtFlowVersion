@@ -1,5 +1,0 @@
-package com.flow.Repository;
-
-public interface NotificationRepository {
-
-}
