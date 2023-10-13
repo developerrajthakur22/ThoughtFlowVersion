@@ -21,7 +21,7 @@ const jwtTokenCommon = getCookie("jwt");
 if (jwtTokenCommon == null || userAccessID == null) {
     //window.alert("Session timeout, Please login again");
     window.alert('Session timeout, Please login again!')
-    window.location.href = "Login.html";
+    window.location.href = "LogIn.html";
 }
 
 // profile pic code
