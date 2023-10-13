@@ -1,0 +1,149 @@
+/* CSS styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #007bff; /* Blue border color */
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    
+}
+
+#search-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* people container */
+.peopleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px; /* Gap between items */
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  
+  .person {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition effect for hover */
+  }
+  
+  .person:hover {
+    transform: translateY(-2px); /* Apply a slight upward lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+  }
+  
+  .personInfo {
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .username {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  .checkProfileButton {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    height: 33%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkProfileButton:hover{
+    background-color: #0056b3;
+  }
+  
+  .followButton {
+    padding: 8px 12px;
+    background-color: #4CAF50; /* Greenish color */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    height: 33%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .followButton:hover {
+    background-color: #45a049; /* Slightly darker greenish color on hover */
+  }
+
+
+  /* set profile pic of every user */
+  .userImagePeople{
+    
+    width: 60px; /* Set the width to 100% to fill the circular container */
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 50%; /* Create a circular image within the circular container */
+
+  }
+
+
+  .peopleContainer {
+    opacity: 0; /* Initially set the container to be fully transparent */
+    transform: translateY(50px); /* Initially position it lower */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    animation: fadeInAndSlideUp 0.8s ease-in-out 1 both;
+}
+
+/* Add other styles for .peopleContainer as needed */
+
+@keyframes fadeInAndSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
