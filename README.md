@@ -7,6 +7,8 @@ ThoughtFlow version 1
 
 **ThoughtFlow** is a social media application designed to capture and share your thoughts, tweets, or feelings. It provides a platform for users to express themselves, connect with others, and engage with the community.
 
+Deployed link: https://thoughtflow.netlify.app/
+
 ## Features
 
 - **Thought Sharing**: Write and share your thoughts, ideas, and experiences.
