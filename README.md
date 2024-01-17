@@ -5,6 +5,7 @@
 **ThoughtFlow** is more than just a social media platform; it's a canvas for your thoughts, a stage for your tweets, and a sanctuary for your feelings. It's where you can freely express yourself, connect with like-minded individuals, and engage with a vibrant community.
 
 🚀 **Deployed Application**: [ThoughtFlow on Netlify](https://thoughtflow.netlify.app/)
+  **Presentation**: [Video Presentation](https://www.linkedin.com/posts/developerraj_happylearning-activity-7121161398465835011-K41I?utm_source=share&utm_medium=member_desktop)
 
 ## Features
 
